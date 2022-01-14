@@ -62,8 +62,8 @@ refToData.once('value', snapshot => {
     var exp=document.getElementById("Expediciones").value;
     firebase.database().ref('usuario/'+tamao).set(
       {  "nombre": nm,  
-         "expediciones" : dsf,
-         "desafios" : exp})
+         "expediciones" : exp,
+         "desafios" : dfs})
   }
   console.log( tamao);
   console.log(snapshot.val());
